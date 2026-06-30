@@ -1,6 +1,6 @@
 deployment:
-  imageURL: 805778285734.dkr.ecr.us-east-1.amazonaws.com/roboshop/catalogue
+  imageURL: 805778285734.dkr.ecr.us-east-1.amazonaws.com/expense/dev/frontend
   imageVersion: 1.0.0
   replicas: 2
 configmap:
-  port: 8080
+  port: 80
