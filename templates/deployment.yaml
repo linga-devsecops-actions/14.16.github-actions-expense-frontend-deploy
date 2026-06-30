@@ -25,7 +25,8 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: lingadevops/frontend:{{ .Values.deployment.imageVersion }}  #lingadevops/frontend:v1.0
+        #image: lingadevops/frontend:{{ .Values.deployment.imageVersion }}  #lingadevops/frontend:v1.0
+        image: "{{ .Values.deployment.imageURL}}:{{ .Values.deployment.imageVersion }}"      
         volumeMounts:
         - name: nginx-conf
           mountPath: /etc/nginx/nginx.conf
